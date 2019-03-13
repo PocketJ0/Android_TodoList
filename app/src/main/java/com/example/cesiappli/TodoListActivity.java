@@ -24,6 +24,8 @@ public class TodoListActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_todo_list);
+
+        //Button Listener
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -83,6 +85,8 @@ public class TodoListActivity extends AppCompatActivity {
 
             }
         });
+        // END button listener
+
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
