@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">CESIAppli</string>
-    <string name="button_text">Mon Bouton</string>button_text
+    <string name="button_text">Mon Bouton</string>
+    <string name="sentence_text">Wesh les frères</string>
+    <string name="accessListTxt_Btn1"> Accèder à la ToDo List</string>
+    <string name="title_activity_todo_list">TodoListActivity</string>
 </resources>

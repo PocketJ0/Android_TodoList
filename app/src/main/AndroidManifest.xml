@@ -9,13 +9,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainTodoListActivity"></activity>
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".TodoListActivity"
+            android:label="@string/title_activity_todo_list"
+            android:parentActivityName=".MainTodoListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity android:name=".MainTodoListActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.cesiappli.MainTodoListActivity" />
         </activity>
     </application>
 
